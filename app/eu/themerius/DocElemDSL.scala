@@ -1,7 +1,7 @@
 package eu.themerius.dsl
 
-trait InnerDSL {
-  val URI = "themerius.eu"
+trait DocElemGrammar {
+  val URI = "localhost"
   def / (id: String) = {
     println(URI + "/§/" + id)
     this
@@ -17,14 +17,14 @@ trait InnerDSL {
   }
 }
 
-trait DSL {
+trait DocElemDSL {
   val Section = "Section"
   val Paragraph = "Paragraph"
   val TOC = "TOC"
-  object * extends InnerDSL
+  object * extends DocElemGrammar
 }
 
-object Document extends DSL {
+object TestDoc extends DocElemDSL {
   * / "aaaaaz" - TOC -- """
     - aaaaaa
     -- aaaaab

@@ -1,0 +1,18 @@
+<modd version="1.0.0-SNAPSHOT">
+  <docelems>
+    <docelem>
+      <id>about-001</id>
+      <type>Section</type>
+      <model>Themerius.eu</model>
+    </docelem>
+    <docelem>
+      <id>about-002</id>
+      <type>Paragraph</type>
+      <model>
+        Willkommen auf meiner Webseite und Wissensressource!
+        Auf dieser Webseite teste ich meine neuste
+        Technologie: <i>Model Driven Documents</i>.
+      </model>
+    </docelem>
+  </docelems>
+</modd>
