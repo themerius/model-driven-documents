@@ -5,5 +5,9 @@
 # Home page
 GET     /                           controllers.Application.index
 
+# DocElems
+GET     /%C2%A7/*uuid               controllers.Application.docElem(uuid)
+GET     /§/*uuid                    controllers.Application.docElem(uuid)
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

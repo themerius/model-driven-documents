@@ -4,6 +4,10 @@
       <id>about-001</id>
       <type>Section</type>
       <model>Themerius.eu</model>
+      <mtype>
+        <namespace>freetext</namespace>
+        <version>0</version>
+      </mtype>
     </docelem>
     <docelem>
       <id>about-002</id>
@@ -13,6 +17,10 @@
         Auf dieser Webseite teste ich meine neuste
         Technologie: <i>Model Driven Documents</i>.
       </model>
+      <mtype>
+        <namespace>de.duden</namespace>
+        <version>25</version>
+      </mtype>
     </docelem>
   </docelems>
 </modd>
