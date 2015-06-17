@@ -22,7 +22,7 @@ object DocElemXmlReader {
         val xml = XML.load(file)
         val docElems = xml \\ "modd" \\ "docelems" \\ "docelem"
         docElems.map(
-          d => DocElem(d \ "id" text, d \ "type" text, d \ "model" text)
+          d => DocElem(d \ "id" text, d \ "type" text, (d \ "model")(0).child.mkString)
         )
       }
       case None => Nil
